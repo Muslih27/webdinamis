@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemerintah Koja</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      /* Header */
+      .header {
+        background-color: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .header img {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .header span {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .header span span {
+        color: #00bfff;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #f4f4f4;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .navbar img {
+        height: 50px;
+        margin-right: 15px;
+      }
+
+      .navbar h1 {
+        font-size: 24px;
+        margin: 0;
+        color: #333;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #333;
+      }
+      .navbar nav {
+        margin-left: auto;
+      }
+
+      .navbar nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        margin: 0 15px;
+        transition: color 0.3s;
+      }
+
+      .navbar nav a:hover {
+        color: #00bfff;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      /* Grid Container */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .grid-item {
+        justify-items: center;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .grid-item img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        justify-content: center;
+      }
+
+      .grid-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .grid-item p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 1024px) {
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .navbar nav {
+          margin-left: 0;
+          margin-top: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <img src="logo.jpeg" alt="Logo" />
+      <span>Pemerintah Kota Administrasi <span>Jakarta Utara</span></span>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html"><img src="logo.jpeg" alt="Logo Kecamatan" /></a>
+      <a href="index.html"><h1>KECAMATAN KOJA</h1></a>
+      <nav>
+        <a href="profil.html" target="_parent">Profil</a>
+        <a href="">Jelajahi</a>
+        <a href="">PPID</a>
+        <a href="">Layanan</a>
+        <a href="">Inovasi</a>
+        <a href="">Publikasi</a>
+        <a href="">Kontak</a>
+      </nav>
+    </div>
+    <h2>FASILITAS SOSIAL KECAMATAN KOJA</h2>
+    <!-- Grid Container -->
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="koja/kesehatan.png" alt="Kesehatan" />
+        <p>Kesehatan</p>
+      </div>
+      <div class="grid-item">
+        <img src="koja/pendidikan.png" alt="Pendidikan" />
+        <p>Pendidikan</p>
+      </div>
+      <div class="grid-item">
+        <img src="koja/instansi.png" alt="Instansi Pemerintah" />
+        <p>Instansi Pemerintah</p>
+      </div>
+      <div class="grid-item">
+        <img src="koja/tempat-belanja.png" alt="Tempat Perbelanjaan" />
+        <p>Tempat Perbelanjaan</p>
+      </div>
+      <div class="grid-item">
+        <img src="koja/taman.png" alt="Taman dan RPTRA" />
+        <p>Taman dan RPTRA</p>
+      </div>
+      <div class="grid-item">
+        <img src="koja/wifi.png" alt="Wifi" />
+        <p>Wifi</p>
+      </div>
+      <div class="grid-item">
+        <img src="koja/halte.png" alt="Halte & Stasiun" />
+        <p>Halte & Stasiun</p>
+      </div>
+      <div class="grid-item">
+        <img src="koja/fasum.png" alt="Fasilitas Umum Lainnya" />
+        <p>Fasilitas Umum Lainnya</p>
+      </div>
+    </div>
+  </body>
+</html>
